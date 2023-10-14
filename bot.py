@@ -10,7 +10,7 @@ from cachetools import TTLCache
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 
-API_TOKEN = "6249189353:AAGPSlM-l_CuUXzGeh6NS280pgROia5f1fE"
+API_TOKEN = "YOUR_TOKEN"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
