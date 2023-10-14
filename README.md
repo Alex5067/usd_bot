@@ -11,4 +11,5 @@
 
         docker-compose build
 3. or
-python3 bot.py
+
+        python3 bot.py
