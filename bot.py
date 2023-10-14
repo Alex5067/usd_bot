@@ -113,6 +113,6 @@ async def main() -> None:
 
 if __name__ == '__main__':
     # Логирование
-    logging.basicConfig(level=logging.DEBUG, filename="bot_log.log", filemode="w",
+    logging.basicConfig(level=logging.DEBUG, filename="bot_log.log", filemode="a",
                         format="%(asctime)s %(levelname)s %(message)s")
     asyncio.run(main())
