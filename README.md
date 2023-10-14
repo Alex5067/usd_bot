@@ -13,14 +13,14 @@ aiogram 3, Docker, logging, asyncio, TTLCache
 - /start - Приветствие, появляется при первом старте бота
 Остальное взаимодействие реализовано с помощью кнопок.
 
-## Launch
-1. Download/Clone this repo
+## Запуск
+1. Скачать/Склонировать репозиторий
 
         git clone https://github.com/Alex5067/usd_bot
         
-2. `cd` into the root directory
+2. `cd` в 'usd_bot' директорию
 
         docker-compose build
-3. or
+3. или
 
         python3 bot.py
