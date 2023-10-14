@@ -10,5 +10,5 @@
 2. `cd` into the root directory
 
         docker-compose build
-   or
-        python3 bot.py
+3. or
+python3 bot.py
