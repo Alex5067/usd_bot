@@ -83,7 +83,7 @@ async def get_exchange_rate(message: Message):
 @dp.message(F.text == "Посчитать курс с комиссией")
 async def get_exchange_rate_command(message: Message, state: FSMContext):
     await state.set_state(Form.waiting_for_exchange_rate)
-    await message.reply("Введите сумму в долларах: ")
+    await message.reply("Введите не отрицательную сумму в долларах: ")
 
 @dp.message(lambda message: message.text.isdigit())
 async def process_amount(message: Message):
