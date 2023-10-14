@@ -75,7 +75,7 @@ async def get_exchange_rate(message: Message):
         if exchange_rate is not None:
             await message.answer(f"На {date.today()} курс доллара составляет: {exchange_rate:.1f} руб.")
             break
-        else:
+        elif n == 2:
             await message.answer("Ошибка, ни один источник данных не доступен")
 
 
@@ -103,7 +103,7 @@ async def process_amount(message: Message):
             total = calculate_total(amount, COMMISSION, exchange_rate)
             await message.answer(f"Курс доллара: {exchange_rate:.1f} руб. \nСумма с комиссией 5%: {total:.1f} руб.")
             break
-        else:
+        elif n == 2:
             await message.answer("Ошибка, ни один источник данных не доступен")
 
 async def main() -> None:
