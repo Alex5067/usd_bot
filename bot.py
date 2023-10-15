@@ -46,6 +46,7 @@ def get_from_api(api_url, key):
             exchange_rate = data['Valute']['USD']['Value']
         else:
             exchange_rate = data['rates']['RUB']
+           # Запись в кэш
         cache[key] = exchange_rate
         return exchange_rate
 
@@ -91,7 +92,6 @@ async def process_amount(message: Message):
         exchange_rate = cache.get(n)
         if exchange_rate is not None:
             # Обращение в кэш
-            print("Обращение")
             amount = float(message.text)
             total = calculate_total(amount, COMMISSION, exchange_rate)
             await message.answer(f"Курс доллара: {exchange_rate:.1f} руб. \nСумма с комиссией 5%: {total:.1f} руб.")
