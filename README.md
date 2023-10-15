@@ -14,13 +14,17 @@ aiogram 3, Docker, logging, asyncio, TTLCache
 Остальное взаимодействие реализовано с помощью кнопок.
 
 ## Запуск
-1. Скачать/Склонировать репозиторий
+1. Вписать свой токен бота в bot.py
+
+        API_TOKEN = "YOUR_TOKEN"
+   
+2. Скачать/Склонировать репозиторий
 
         git clone https://github.com/Alex5067/usd_bot
         
-2. `cd` в 'usd_bot' директорию
+3. `cd` в 'usd_bot' директорию
 
         docker-compose build
-3. или
+4. или
 
         python3 bot.py
